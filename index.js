@@ -8,7 +8,22 @@ function myFunction() {
 }
 
 
-// function but(e) {
-//     console.log('hi');
+function scrollit(arg) {
+    // location.href = '#' + arg
+    let a = '#' + arg
     
-// }
+    document.querySelector(a).scrollIntoView({
+        behavior: 'smooth'
+    });
+    // window.scrollBy(0, -60)
+
+    let b = document.querySelector('.active')
+        if (b) {
+            b.classList.remove("active")
+        }
+
+    let c = document.querySelector(`.${arg}`)
+    c.classList.add('active')
+    
+    
+}

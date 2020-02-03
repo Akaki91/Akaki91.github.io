@@ -10,18 +10,18 @@
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/png" href="favicon.ico" />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
     <title>Akaki Koridze Porfolio</title>
 </head>
 <body>
 
     <div class="navigation">
         <div class="topnav" id="myTopnav">
-            <a href="#">About Me</a>
-            <a href="#">Resume</a>
-            <a href="#">Skills</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
+            <a class="aboutme" onclick="scrollit('aboutme')">About Me</a>
+            <a class="resum" onclick="scrollit('resume')">Resume</a>
+            <a class="skill" onclick="scrollit('skill')">Skills</a>
+            <a class="portfolio" onclick="scrollit('portfolio')">Portfolio</a>
+            <a class="contact" onclick="scrollit('contact')">Contact</a>
             
         </div>
         <a class="icon" onclick="myFunction()">
@@ -30,7 +30,7 @@
         
     </div>
     
-    <section class="background-cover">
+    <section id="resume" class="background-cover">
         <img class="img"
             src="images/img.jpg"
             alt="man">
@@ -49,8 +49,78 @@
             Click for Resume
         </button>
     </section>
+
+    <section id="aboutme" class="skills">
+        <hr>
+        <div class="skilltext">
+            ABOUT ME
+            <hr>
+        </div>
+        <div>
+            <!-- <section class="module" id="profile">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="m-title c-align">
+                                <h2>Daniel Raleway</h2>
+                                <h6>Visual Designer & Front-end Developer</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p><img src="assets/images/im.jpg" alt=""></p>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>Profesional Profile</h5>
+                            <p>Map where your photos were taken and discover local points of interest. Map where your photos. Map
+                                where your photos were taken and discover local points of interest. Map where your photos.</p>
+                            <p>Map where your photos were taken and discover local points of interest. Map where your photos. Map
+                                where your photos were taken and discover local points of interest. Map where your photos.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>My Skills</h5>
+                            <div class="progress-item">
+                                <div class="progress-title">Gulp</div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-brand" aria-valuenow="60" role="progressbar"
+                                        aria-valuemin="0" aria-valuemax="100"><span class="pb-number-box"><span
+                                                class="pb-number"></span>%</span></div>
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-title">UX Design</div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-brand" aria-valuenow="80" role="progressbar"
+                                        aria-valuemin="0" aria-valuemax="100"><span class="pb-number-box"><span
+                                                class="pb-number"></span>%</span></div>
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-title">HTML / CSS3 / SASS</div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-brand" aria-valuenow="50" role="progressbar"
+                                        aria-valuemin="0" aria-valuemax="100"><span class="pb-number-box"><span
+                                                class="pb-number"></span>%</span></div>
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-title">Gulp</div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-brand" aria-valuenow="60" role="progressbar"
+                                        aria-valuemin="0" aria-valuemax="100"><span class="pb-number-box"><span
+                                                class="pb-number"></span>90%</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </section>
     
-    <section class="skills">
+        </div>
+    </section>
+    
+    <section id="skill"  class="skills">
             <hr>
             <div class="skilltext">
                 SKILLS
@@ -72,7 +142,7 @@
 
     </section>
 
-    <section class="skills">
+    <section id="portfolio"  class="skills">
             <hr>
             <div class="skilltext">
                 PORTFOLIO
@@ -83,7 +153,7 @@
             </div>
     </section>
 
-    <section class="skills">
+    <section id="contact"  class="skills">
         <hr>
         <div class="skilltext">
             CONTACT
@@ -93,7 +163,6 @@
     
         </div>
     </section>
-
 
     <script src="https://kit.fontawesome.com/671cd2f222.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
