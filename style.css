@@ -4,11 +4,11 @@
 }
 
 
-/* 
 body {
-  width: 100%; 
-  position: relative
-} */
+  background-color: #f5f5f5;
+  color: #4e4e4e;
+}
+
 
 .background-cover {
   /* position: relative; */
@@ -62,7 +62,11 @@ body {
 }
 
 .topnav a.active {
-  text-decoration: underline;
+  background-color: lightgray;
+}
+
+.text-slider-items {
+  display: none;
 }
 
 
@@ -186,6 +190,7 @@ body {
 .txt2 {
   font-size: 4.5vw;
   padding-left: 3px;
+  margin: 0;
 }
 
 .skilltext {
