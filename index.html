@@ -1,200 +1,495 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
-    <title>Akaki Koridze Porfolio</title>
-</head>
-<body>
+  <meta charset="utf-8">
+  <title>Akaki Koridze Portfolio</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
-    <div class="navigation">
-        <div class="topnav" id="myTopnav">
-            <a class="resum" onclick="scrollit('resume')">Home</a>
-            <a class="aboutme" onclick="scrollit('aboutme')">About Me</a>
-            <a class="skill" onclick="scrollit('skill')">Skills</a>
-            <a class="portfolio" onclick="scrollit('portfolio')">Portfolio</a>
-            <a class="contact" onclick="scrollit('contact')">Contact</a>
-            
+  <!-- Favicons -->
+  <link href="img/favicon.ico" rel="icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Fonts and icons -->
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+
+
+
+<body id="page-top">
+
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <!-- <a class="navbar-brand js-scroll" href="#page-top">Akaki Koridze</a> -->
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#service">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#work">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Intro Skew Star /-->
+  <div id="home" class="intro route bg-image" style="background-image: url(img/img.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="intro-title">Akaki Koridze</h1>
+          <p class="intro-subtitle"><span class="text-slider-items">Full Stack Developer,Living in NYC</span><strong class="text-slider"></strong></p>
+          <button class="resume" onclick="but()">
+            Click for Resume
+          </button>
         </div>
-        <a class="icon" onclick="myFunction()">
-            <i class="fas fa-bars"></i>
-        </a>
+      </div>
+    </div>
+  </div>
+  <!--/ Intro Skew End /-->
+
+  <section id="about" class="about-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="box-shadow-full">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div class="about-img">
+                      <img src="img/img3.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                      <p><span class="title-s">Name: </span> <span>Akaki Koridze</span></p>
+                      <p><span class="title-s">Profile: </span> <span>Full Stack Developer</span></p>
+                      <p><span class="title-s">Email: </span> <span>akakikoridze@yahoo.com</span></p>
+                      <p><span class="title-s">Phone: </span> <span>(347) 858-1029</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-mf">
+                  <span>HTML</span> <span class="pull-right">90%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="85" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span>CSS3</span> <span class="pull-right">80%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="75" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span>RUBY</span> <span class="pull-right">60%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      About me
+                    </h5>
+                  </div>
+                  <p class="lead">
+                    Hi. My name is Akaki. I am a full stack web developer living in NYC. 
+                    I am open for new opportunities and would like to hear from you.
+                  </p>
+                  <p class="lead">
+                    I have graduated from App Academy bootcamp located in NYC recently and took intensive training courses
+                    in web development in GeoLab educational center during 4 months. Meanwhile I have been interning
+                    for their project mainly working in jQuery and front end.
+                  </p>
+                  <p class="lead">
+                    I have experince in React, Node.js, Bootstrap, MongoDB, Ruby and more.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--/ Section Services Star /-->
+  <section id="service" class="services-mf route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Skills
+            </h3>
+            <p class="subtitle-a">
+              Programming Languages, Frameworks, Libraries, Databases and More...
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-xs-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="devicon-javascript-plain"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Javascript</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="devicon-nodejs-plain"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Node</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="devicon-express-original"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Express</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="devicon-jquery-plain-wordmark"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">jQuery</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="devicon-bootstrap-plain"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Bootstrap</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="devicon-react-original"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">React</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="devicon-html5-plain"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">HTML5</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="devicon-css3-plain"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">CSS3</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="devicon-ruby-plain"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Ruby</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="devicon-mongodb-plain-wordmark"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">MongoDB</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="devicon-mysql-plain-wordmark"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">MySQL</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><img class="firebase" src="img/firebase.png" alt="firebase"></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Firebase</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section Services End /-->
+
+  <!--/ Section Portfolio Star /-->
+  <section id="work" class="portfolio-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Portfolio
+            </h3>
+            <p class="subtitle-a">
+              See below project I have been working on recently
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="work-box">
+            <a href="img/img4.jpg" data-lightbox="gallery-mf">
+            <a href="img/img5.jpg" data-lightbox="gallery-mf">
+            <a href="img/img6.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/img4.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">E-commerce Website from Scratch</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Full Stack Project</span> / <span class="w-date">Jan 20, 2020</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="work-box">
+
+            <div class="w-text">
+              <h5>E-commerce Clothing Store</h5>
+              <p>Backend of the website was developed using <strong>NODE.JS</strong> and <strong>EXPRESS</strong>.
+              <strong>MONGODB</strong> database has been used with <strong>MONGOOSE</strong>  modeling schema.
+              <strong>JOI</strong> has been used for data validation.
+              <strong>BYCRIPT</strong> has been used for securing account password and <strong>OAUTH</strong> has been used for facebook login.
+              <strong>EXPRESS Sessions</strong>  has been used for cart modeling and <strong>JWT token</strong> has been 
+              used for authorzation and authentification and more.
+              </p>
+
+            
+              <p>For Frontend has been used BOOTSTRAP, JQUERY and NUNJUCKS was used as view engine.</p>
+              
+              <p>Website was deployed to HEROKU for demo.</p>
+
+              <p>See demo: <a href="https://expressclothing.herokuapp.com/">www.expressclothing.com</a></p>
+      
+            </div>
+          </div>
+        </div>
         
     </div>
-    
-    <section id="resume" class="background-cover">
-        <img class="img"
-            src="images/img.jpg"
-            alt="man">
+  </section>
+  <!--/ Section Portfolio End /-->
 
-        <div class="textfield">
-            <!-- <div class="mh-promo">
-                <span>Hello I'm</span>
-            </div> -->
-            <p class="txt2">Akaki Koridze</p>
-            <p class="txt1">Full Stack Developer Living in NYC </p> 
-            <!-- <p>Experienced in React, Javascript and Ruby.</p> -->
-            
-        </div>
-
-        <button class="resume" onclick="but()">
-            Click for Resume
-        </button>
-    </section>
-
-    <section id="aboutme" class="skills">
-        <div class="skilltext">
-            ABOUT ME
-            <hr>
-        </div>
-        <div>
-            <section id="about" class="about-mf sect-pt4 route">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="box-shadow-full">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="row">
-                                            <div class="col-sm-6 col-md-5">
-                                                <div class="about-img">
-                                                    <img src="file:///Users/akakikoridze/Desktop/Port/Akaki91.github.io/images/img.jpg"
-                                                        class="img-fluid rounded b-shadow-a" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-7">
-                                                <div class="about-info">
-                                                    <p><span class="title-s">Name: </span> <span>Morgan Freeman</span></p>
-                                                    <p><span class="title-s">Profile: </span> <span>full stack developer</span></p>
-                                                    <p><span class="title-s">Email: </span> <span>contact@example.com</span></p>
-                                                    <p><span class="title-s">Phone: </span> <span>(617) 557-0089</span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-mf">
-                                            <p class="title-s">Skill</p>
-                                            <span>HTML</span> <span class="pull-right">85%</span>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
-                                                    aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <span>CSS3</span> <span class="pull-right">75%</span>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
-                                                    aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <span>PHP</span> <span class="pull-right">50%</span>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
-                                                    aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90"
-                                                    aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="about-me pt-4 pt-md-0">
-                                            <div class="title-box-2">
-                                                <h5 class="title-left">
-                                                    About me
-                                                </h5>
-                                            </div>
-                                            <p class="lead">
-                                                Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu
-                                                erat, accumsan id
-                                                imperdiet et, porttitor
-                                                at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla
-                                                porttitor accumsan tincidunt.
-                                            </p>
-                                            <p class="lead">
-                                                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor
-                                                eget felis
-                                                porttitor volutpat. Vestibulum
-                                                ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.
-                                            </p>
-                                            <p class="lead">
-                                                Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in,
-                                                elementum id enim.
-                                                Nulla porttitor accumsan
-                                                tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="contact-mf">
+            <div id="contact" class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      Send Me a Message
+                    </h5>
+                  </div>
+                  <div>
+                      <form action="" method="post" role="form" class="contactForm">
+                      <div id="sendmessage">Your message has been sent. Thank you!</div>
+                      <div id="errormessage"></div>
+                      <div class="row">
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                              <div class="validation"></div>
                             </div>
                         </div>
-                    </div>
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
                 </div>
-            </section>
-    
+                <div class="col-md-6">
+                  <div class="title-box-2 pt-4 pt-md-0">
+                    <h5 class="title-left">
+                      Get in Touch
+                    </h5>
+                  </div>
+                  <div class="more-info">
+                    <p class="lead">
+                      You are welcome to email or text me anytime and give me a call between 9:00AM to 9:00PM EST
+                    </p>
+                    <ul class="list-ico">
+                      <li><span class="ion-ios-location"></span>Brooklyn, NY 11214</li>
+                      <li><span class="ion-ios-telephone"></span>(347) 858-1029</li>
+                      <li><span class="ion-email"></span>akakikoridze@yahoo.com</li>
+                    </ul>
+                  </div>
+                  <div class="socials">
+                    <ul>
+                      <li><a href="https://www.facebook.com/akakikoridze"><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
+                      <li><a href="https://www.instagram.com/akakikoridze_"><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
+                      <li><a href="https://github.com/Akaki91"><span class="ico-circle"><i class="fab fa-github"></i></span></span></a></li>
+                      <li><a href=""><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    
-    <section id="skill"  class="skills">
-            <hr>
-            <div class="skilltext">
-                SKILLS
-                <hr>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p class="copyright">&copy; Copyright <strong>Akaki Koridze</strong></p>
+              <div class="credits">
+              </div>
             </div>
-
-            <div class="logos">
-                <i class="devicon-javascript-plain"></i>
-                <i class="devicon-react-original-wordmark"></i>
-                <i class="devicon-nodejs-plain-wordmark"></i>
-                <i class="devicon-express-original-wordmark"></i>
-                <i class="devicon-mongodb-plain-wordmark"></i>
-                <i class="devicon-html5-plain-wordmark"></i>
-                <i class="devicon-css3-plain-wordmark"></i>
-                <i class="devicon-bootstrap-plain-wordmark"></i>
-                <i class="devicon-ruby-plain-wordmark"></i>
-                <i class="devicon-jquery-plain-wordmark"></i>
-            </div>
-
-    </section>
-
-    <section id="portfolio"  class="skills">
-            <hr>
-            <div class="skilltext">
-                PORTFOLIO
-                <hr>
-            </div>
-            <div>
-
-            </div>
-    </section>
-
-    <section id="contact"  class="skills">
-        <hr>
-        <div class="skilltext">
-            CONTACT
-            <hr>
+          </div>
         </div>
-        <div>
-    
-        </div>
-    </section>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
 
-    <script src="https://kit.fontawesome.com/671cd2f222.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+  <script src="https://kit.fontawesome.com/671cd2f222.js" crossorigin="anonymous"></script>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
 </body>
 </html>
