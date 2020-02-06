@@ -215,6 +215,23 @@ a:hover {
   transition: all 500ms ease;
 }
 
+.getcontact {
+
+  font-size: 22px;
+  margin-left: -10%;
+  margin-bottom: 22%;
+}
+
+.getcontact a {
+  color: white;
+  margin-left: 10px;
+}
+
+.getcontact a:hover {
+  color: black;
+}
+
+
 .firebase {
   width: 75px
 }
@@ -605,6 +622,11 @@ a:hover {
   color: #fff;
 }
 
+/* .intro .route .bg-image {
+  background-image: url("img/img.jpg");
+  z-index: +10;
+} */
+
 .intro .intro-content {
   position: absolute;
 }
@@ -623,7 +645,7 @@ a:hover {
 .intro .intro-title {
   color: #fff;
   font-size: 3.5rem;
-  margin-right: 60%;
+  /* margin-right: 60%; */
 }
 
 .intro .text-slider-items {
@@ -636,7 +658,7 @@ a:hover {
 }
 
 .intro-single .intro-content {
-  margin-top: 30%;
+  /* margin-top: 30%; */
 }
 
 .intro-single .intro-title {
@@ -664,8 +686,13 @@ a:hover {
 //--//-->   ABOUT
 ======================================*/
 
+.about-me {
+  text-align: justify;
+}
+
+
 .about-mf .box-shadow-full {
-  padding-top: 4rem;
+  /* padding-top: 4rem; */
   padding-bottom: 4rem;
 }
 
@@ -674,7 +701,7 @@ a:hover {
 }
 
 .about-mf .about-img img {
-  margin-left: 10px;
+  margin: 10px;
 }
 
 .skill-mf span {
@@ -759,7 +786,7 @@ a:hover {
 
 .resume {
   box-shadow: 10px 10px 5px black;
-  font-size: 20px;
+  font-size: 17px;
   color: black;
   border: white;
   background-color: white;
@@ -773,11 +800,7 @@ a:hover {
   vertical-align: center;
   max-height: inherit;
   background-color: white;
-
-  /* background: linear-gradient(to right, black 50%, white 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  transition: all .3s ease-out; */
+  /* border-radius: 5px; */
 }
 
 .resume:hover {
@@ -795,6 +818,7 @@ a:hover {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-color: #fff;
+  height: 90%;
 }
 
 .work-box:hover img {
@@ -845,8 +869,9 @@ a:hover {
 .w-text {
   font-size: 1rem;
   /* margin-left: 25px; */
-  padding: 20px;
-  height: 417.5px;
+  padding: 30px;
+  padding-bottom: 50px;
+  text-align:justify
 }
 
 .w-text h5 {
@@ -854,6 +879,14 @@ a:hover {
   margin-bottom: 20px;
 }
 
+.w-text h6 {
+  display: inline-block;
+  color: red;
+}
+
+.w-text p {
+  text-align:justify
+}
 
 
 /*------/ Sidebar /------*/
@@ -1032,6 +1065,27 @@ footer .credits a {
   border-radius: .3rem;
 }
 
+.btns-repo {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.btn-repo {
+  margin-right: 40px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+  /* float: center; */
+}
+
+.btn-repo:hover {
+  background-color: white;
+  color: black;
+  border: solid black 1px;
+}
+
 @media (min-width: 577px) {
   .counter-box {
     margin-bottom: 1.8rem;
@@ -1065,48 +1119,53 @@ footer .credits a {
     background-color: black;
     color: white;
     /* padding-left: 5px; */
-    top: 5%;
-    /* margin-top: 10%; */
+    /* top: 5%; */
     margin-right: 50%;
     text-align: left;
-    margin-bottom: 30%;
-    width: 205px;
+    /* margin-bottom: 30%; */
+    width: 215px;
   }
 
   .intro .intro-title {
   color: #fff;
   font-size: 2rem;
-  margin-right: 10%;
-  
+  /* margin-right: 10%; */
+  }
+
+  .getcontact {
+    font-size: 12px;
+    margin-left: 0.1%;
   }
 
   .resume {
   box-shadow: 10px 10px 5px black;
-  font-size: 20px;
+  font-size: 16px;
   color: black;
   border: white;
   background-color: white;
   position: absolute;
   z-index: +1;
-  top: 55%;
-  left: 27%;
+  top: 58%;
+  left: 30%;
   padding: 1vw;
   cursor: pointer;
   background-color: white;
   vertical-align: center;
   max-height: inherit;
   background-color: white;
-
-  /* background: linear-gradient(to right, black 50%, white 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  transition: all .3s ease-out; */
-}
+  
+ 
+  }
 
 .resume:hover {
   background-color: black;
   color: white;
   background-position: left bottom;
+  }
+
+
+.service-box {
+  /* width: 70%; */
 }
 
 }
@@ -1133,7 +1192,6 @@ footer .credits a {
     color: white;
     padding-left: 5px;
     top: 5%;
-    margin-bottom: 20%;
     margin-right: 45%;
     text-align: left;
     margin-left: -10%;
